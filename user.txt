@@ -1,0 +1,12 @@
+
+username: Oleg
+e-mail: Oleg@a.ua
+password: 123
+
+superuser: admin
+e-mail: admin@a.ua
+password: 123
+
+username: Oleg2
+e-mail: Oleg2@a.ua
+password: 123
