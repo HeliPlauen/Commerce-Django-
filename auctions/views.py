@@ -103,6 +103,24 @@ def new(request):
         return render(request, "auctions/login.html")
  
     if request.method == "POST":
+        if not request.POST["name"]:
+            return render(request, "auctions/new.html", {
+                "categories": CATEGORIES,
+                "message": "You have not inputed the auction name!!!"
+            })
+
+        elif not request.POST["startprice"]:
+            return render(request, "auctions/new.html", {
+                "categories": CATEGORIES,
+                "message": "You have not inputed the auction startprice!!!"
+            })
+
+        elif not request.POST["categories"]:
+            return render(request, "auctions/new.html", {
+                "categories": CATEGORIES,
+                "message": "You have not inputed the auction categories!!!"
+            })
+
         user_id = request.user.id
         user_creator = User.objects.get(pk = user_id)
         auction = Auction(user_creator = user_creator, name = request.POST["name"], 

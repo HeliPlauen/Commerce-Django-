@@ -2,6 +2,7 @@
 
 {% block body %} 
     <h2>Create new auction</h2> 
+    <p style="color:red">{{ message }}</p>
     <form action="{% url 'new' %}" method="post">
         {% csrf_token %}
         <input class="form-control" type="text" name="name" placeholder="Auction name"><br>
