@@ -8,6 +8,8 @@ Come to this app, create your account there and by or sell (not really!!!!) WWI 
 You can also make your rates and comment lots (if you are authenticated off course). 
 If your rate requires the lot-owner, he stops trade and you become a winner (and receive message about it).
 
+Wisit deployed project here if you wish: http://heliplauen.pythonanywhere.com/
+
 Here you may see a few screenshots.
 
 The main page:
